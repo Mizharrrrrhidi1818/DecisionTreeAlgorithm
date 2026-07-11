@@ -1,15 +1,18 @@
-# Classification of Decision Tree Algorithm
+# CART Decision Tree Implementation from Scratch
 
-Each student should solve one task from the set (tasks can not be repeated) and submit the solution for evaluation.
+This project demonstrates a step-by-step implementation of the **CART (Classification and Regression Trees)** algorithm using the **Gini Impurity** metric. It manually calculates the best splits for Iteration 1 and Iteration 2, and then generates a visual decision tree using `scikit-learn`.
 
-You are required to implement a decision tree building algorithm to a depth of 3.
+## 📊 Dataset
+The model is trained on a small dataset of 8 records with 4 features and 1 target variable:
+- **Features:** `computer` (categorical), `income` (numerical), `price` (numerical), `student` (boolean)
+- **Target:** `BUY` (yes/no)
 
-First, build the tree manually. Choose either the ID3 or CART algorithm with an appropriate splitting criterion and perform all calculations and drawings manually – in Excel, Word, or on paper.
+## 🚀 Features
+- **Manual Gini Calculations:** Iterates through all categorical and numerical splits to compute `Gini(S1)`, `Gini(S2)`, and the weighted `GiniSplit`.
+- **Dynamic Iteration 2:** Automatically identifies the best split from Iteration 1, isolates the most impure child node, and evaluates all possible splits for Iteration 2.
+- **Tree Visualization:** Automatically generates and saves a visual decision tree (`decision_tree.png`) using `matplotlib` and `scikit-learn`.
 
-Then, using the same dataset, implement an analogous algorithm in Python. Generate the decision tree.
-
-All calculations should be clear and described to allow for a complete understanding of your problem-solving process.
-
-Submit the completed task for evaluation.
-
-Then import the data into Python, perform the analogous algorithm, draw the tree. 
+## 🛠️ Requirements
+Make sure you have Python 3.8+ installed. Install the required packages using:
+```bash
+pip install -r requirements.txt
