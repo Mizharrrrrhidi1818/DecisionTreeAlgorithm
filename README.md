@@ -4,9 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
 
-**Author:** Tantri Mizhar Arofahidi  
-**Institution:** University of Silesia in Katowice 
-**Date:** December 2025  
 **Live Code:** [View Python Script](association_rules.py) | [View Requirements](requirements.txt)
 
 A comprehensive, educational implementation of the **CART (Classification and Regression Trees)** algorithm with manual Gini impurity calculations, step-by-step iteration analysis, and automated decision tree generation.
